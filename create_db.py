@@ -37,7 +37,7 @@ def populate_people_table():
     cursor = conn.cursor()
     fake = Faker()
 
-    for _ in range(100):
+    for _ in range(200):
         name = fake.name()
         age = fake.random_int(min=18, max=90)
         email = fake.email()
